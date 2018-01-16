@@ -947,7 +947,7 @@ AmtPtpReportFeatures(
 			PPTP_DEVICE_CAPS_FEATURE_REPORT capsReport = (PPTP_DEVICE_CAPS_FEATURE_REPORT) packet.reportBuffer;
 
 			capsReport->MaximumContactPoints = PTP_MAX_CONTACT_POINTS;
-			capsReport->ButtonType = PTP_BUTTON_TYPE_CLICK_PAD;
+			capsReport->ButtonType = PTP_BUTTON_TYPE_PRESSURE_PAD;
 			capsReport->ReportID = REPORTID_DEVICE_CAPS;
 
 			TraceEvents(

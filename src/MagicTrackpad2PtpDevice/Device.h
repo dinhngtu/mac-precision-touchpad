@@ -30,7 +30,9 @@ typedef struct _DEVICE_CONTEXT
 	double                      WidthFuzz;
 	double						OrientationFuzz;
 
-	PTP_CONTACT_RAW             ContactRepository[5];
+	INT							FingerState[MAX_FINGERS];
+
+	PTP_CONTACT					PastContacts[MAX_FINGERS];
 
 } DEVICE_CONTEXT, *PDEVICE_CONTEXT;
 

@@ -12,12 +12,12 @@
 		REPORT_SIZE, 0x01, /* Report Size: 1 */ \
 		INPUT, 0x02, /* Input: (Data, Var, Abs) */ \
 		REPORT_COUNT, 0x01, /* Report Count: 1 */ \
-		REPORT_SIZE, 0x03, /* Report Size: 3 */ \
+		REPORT_SIZE, 0x04, /* Report Size: 3 */ \
 		LOGICAL_MAXIMUM, 0x03, /* Logical Maximum: 3 */ \
 		USAGE, 0x51, /* Usage: Contract Identifier */ \
 		INPUT, 0x02, /* Input: (Data, Var, Abs) */ \
 		REPORT_SIZE, 0x01, /* Report Size: 1 */ \
-		REPORT_COUNT, 0x03, /* Report Count: 3 */ \
+		REPORT_COUNT, 0x02, /* Report Count: 3 */ \
 		INPUT, 0x03, /* Input: (Const, Var, Abs) */ \
 		/* End of a byte */ \
 		/* Begin of 4 bytes */ \
@@ -51,12 +51,12 @@
 		REPORT_SIZE, 0x01, /* Report Size: 1 */ \
 		INPUT, 0x02, /* Input: (Data, Var, Abs) */ \
 		REPORT_COUNT, 0x01, /* Report Count: 1 */ \
-		REPORT_SIZE, 0x03, /* Report Size: 3 */ \
+		REPORT_SIZE, 0x04, /* Report Size: 3 */ \
 		LOGICAL_MAXIMUM, 0x03, /* Logical Maximum: 3 */ \
 		USAGE, 0x51, /* Usage: Contract Identifier */ \
 		INPUT, 0x02, /* Input: (Data, Var, Abs) */ \
 		REPORT_SIZE, 0x01, /* Report Size: 1 */ \
-		REPORT_COUNT, 0x03, /* Report Count: 3 */ \
+		REPORT_COUNT, 0x02, /* Report Count: 3 */ \
 		INPUT, 0x03, /* Input: (Const, Var, Abs) */ \
 		/* End of a byte */ \
 		/* Begin of 4 bytes */ \

@@ -142,8 +142,8 @@ typedef struct _PTP_DEVICE_SELECTIVE_REPORT_MODE_REPORT {
 typedef struct _PTP_CONTACT {
 	UCHAR		Confidence : 1;
 	UCHAR		TipSwitch  : 1;
-	UCHAR		ContactID  : 3;
-	UCHAR		Padding    : 3;
+	UCHAR		ContactID  : 4;
+	UCHAR		Padding    : 2;
 	USHORT		X;
 	USHORT		Y;
 } PTP_CONTACT, *PPTP_CONTACT;

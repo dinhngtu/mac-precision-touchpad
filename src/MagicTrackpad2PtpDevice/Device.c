@@ -566,6 +566,10 @@ AmtPtpEvtDeviceD0Entry(
 		}
 	}
 
+	for (int i = 0; i < MAX_FINGERS; i++) {
+		pDeviceContext->FingerState[i] = -1;
+	}
+
 	//
 	// Since continuous reader is configured for this interrupt-pipe, we must explicitly start
 	// the I/O target to get the framework to post read requests.

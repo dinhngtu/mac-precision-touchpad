@@ -124,21 +124,12 @@ AmtPtpDeviceEvtIoDeviceControl(
 	_In_ ULONG IoControlCode
 )
 {
+	UNREFERENCED_PARAMETER(OutputBufferLength);
+	UNREFERENCED_PARAMETER(InputBufferLength);
 	
 	NTSTATUS status = STATUS_SUCCESS;
 	WDFDEVICE device = WdfIoQueueGetDevice(Queue);
 	BOOLEAN requestPending = FALSE;
-
-	TraceEvents(
-		TRACE_LEVEL_INFORMATION,
-		TRACE_QUEUE,
-		"%!FUNC!: Queue 0x%p, Request 0x%p OutputBufferLength %d InputBufferLength %d IoControlCode %d",
-		Queue, 
-		Request, 
-		(int) OutputBufferLength, 
-		(int) InputBufferLength, 
-		IoControlCode
-	);
 
 	switch (IoControlCode)
 	{
@@ -286,11 +277,6 @@ AmtPtpDispatchReadReportRequests(
 		);
 		return status;
 	} else {
-		TraceEvents(
-			TRACE_LEVEL_INFORMATION, 
-			TRACE_DRIVER,
-			"%!FUNC! A report has been forwarded to input queue"
-		);
 	}
 
 	if (NULL != Pending) {
